@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El declive de estudiantes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      width: 100%;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    h2 {
+      margin: 30px 0 10px 0;
+    }
+
+    .imagen-comentario {
+      margin-top: 20px;
+    }
+
+    .comentario, .analisis {
+      max-width: 800px;
+      padding: 0 20px;
+      margin: 20px auto;
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    .indicaciones {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px dashed #aaa;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    #canvas-container {
+      margin-bottom: 40px;
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+    }
+
+    footer {
+      width: 100%;
+      display: flex;
+      height: 40px;
+      margin-top: 40px;
+    }
+
+    .rojo {
+      background-color: red;
+      flex: 1;
+    }
+
+    .blanco {
+      background-color: white;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>El declive de estudiantes es culpa del DT</header>
+
+  <nav>
+    <a href="#opinion">Opinión</a>
+    <a href="#analisis">Análisis</a>
+    <a href="#archivo">Archivo</a>
+  </nav>
+
+  <h2>El caprichito del DT por poner a Piovi y Medina</h2>
+
+  <div class="imagen-comentario">
+    <img src="imagenes/109.png" alt="Imagen inicial" width="600">
+  </div>
+
+  <!-- Sección Opinión -->
+  <div class="comentario" id="opinion">
+    <p>
+      El principal culpable del presente de estudiantes. El equipo no le hace un gol a nadie, juega primeros o segundos tiempos horribles, por momentos pareciera que no tiene una idea. Para colmo sufre una defensa de mierda hace más de un año, en los cuales no fueron capaces de reforzar bien, arquero incluido, con 30 palos verdes invertidos. El 50% de esa inversión fue en un jugador que cuando entró al equipo lo hizo mierda. Por más que sea un buen jugador, y es culpa del técnico y de la dirigencia, de no poner 15 palos por un Marchesín por ej, y de no reforzar la defensa, mínimamente la zaga central. Alario, otro mal apuntado, y otro "baratito". La realidad es que no se debiera haber escatimado en ciertos puestos, que claramente no estaban bien cubiertos, lo que hace a estudianten tener un plantel que no esta apto para competir en ningun frente, ni siquiera en el local. Hubo un mal mal mercado de pases, yo no puedo entender como tenemos esta defensa, como tenemos tantos mediocampistas y volantes ofensivos, los cuales el dt administra muy mal, sera por eso que veron tuvo diferencias con angeleri? Ahora la culpa es de todos, pero a pesar de todo hay plantel para tener mejores números que estos, pero el de la foto deberia ponerse las pilas y volver al  4321 que como muestra abajo nos hizo cosechar los puntos por los cuales hoy no estamos afuera de los 9 que clasifican. Aun asi la situacion es desconcertante y estudiantes naufraga de papelon en papelon.
+    </p>
+  </div>
+
+  <!-- Sección Análisis -->
+  <div class="analisis" id="analisis">
+    <p>
+      Claramente el ingreso de Piovi y de Medina, para después abandonar por completo el 4231, sumado a lesiones, malos planteos del DT, malos cambios, cambios siempre tarde, delanteros con características muy puntuales que si no se asocian prácticamente no hacen nada, todos son factores para que Estudiantes no haya ganado más en el torneo local. Esto sumado a que el técnico ni siquiera prueba jugar con 2 9 de entrada o ponerlos mucho más tiempo juntos. Es preocupante la falta de variantes que se presentan desde el cuerpo técnico, siendo que el año pasado se hizo hincapié en que no había banco. Ahora sí hay banco, y me parece que se lo está utilizando mal.
+    </p>
+  </div>
+
+  <!-- Sección Archivo (Canvas e imágenes con flechas) -->
+  <div class="indicaciones" id="archivo">
+    Usá las flechas izquierda y derecha del teclado para ver las imágenes ⬅️➡️
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <!-- Librería p5.js y sketch -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+  <!-- Footer con bandera rojo-blanco-rojo -->
+  <footer>
+    <div class="rojo"></div>
+    <div class="blanco"></div>
+    <div class="rojo"></div>
+  </footer>
+
+</body>
+</html>
